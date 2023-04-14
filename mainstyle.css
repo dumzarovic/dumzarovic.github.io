@@ -103,6 +103,10 @@ span {
     border-radius: 8px;
 }
 
+img {
+    border-radius: 50%;
+}
+
 /*OUTSTANDING TASKS*/
 /*
 1. Change the lorem font to readable font
