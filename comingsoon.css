@@ -8,11 +8,10 @@ html {
 }
 
 body {
+    font-family: 'Audiowide';
+    color:black;
     display: table-cell;
     vertical-align: middle;
-    background-image: url(images/chess04.jpeg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: lightblue;
 }
 
