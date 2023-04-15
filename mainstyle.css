@@ -101,7 +101,7 @@ body {
 footer {
     text-align: center;
     background-color: silver;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     height:fit-content;
