@@ -6,7 +6,7 @@
   <script>
     function callBackend() {
       fetch("/do-something")
-        .then(res => res.text())  // or .json() if you're feeling spicy
+        .then(res => res.json())  
         .then(data => {
           document.getElementById("resultBox").innerText = data;
         })
