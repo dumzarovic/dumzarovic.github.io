@@ -1,4 +1,18 @@
 <html>
   <p>Welcome to my blog space</p>
   <button>Click here</button>
+  <div id="resultBox"></div>
+
+  <script>
+    function callBackend() {
+      fetch("/do-something")
+        .then(res => res.text())  // or .json() if you're feeling spicy
+        .then(data => {
+          document.getElementById("resultBox").innerText = data;
+        })
+        .catch(err => {
+          console.error("Backend be cursed:", err);
+        });
+    }
+  </script>
 </html>
