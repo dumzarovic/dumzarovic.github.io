@@ -1,11 +1,17 @@
 <html>
   <p>Welcome to my blog space</p>
-  <button>Click here</button>
+  <button onclick="test_function()">Click here</button>
   <div id="resultBox"></div>
 
   <script>
+    function test_function() {
+      data = "The button has been clicked"
+
+      document.getElementById("resultBox").innerText = data;
+    }
+
     function callBackend() {
-      fetch("/do-something")
+      fetch("/blog")
         .then(res => res.json())  
         .then(data => {
           document.getElementById("resultBox").innerText = data;
