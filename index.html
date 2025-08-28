@@ -18,7 +18,7 @@
       margin: auto;
     }
 
-    h1, h2 {
+    h1, h3 {
       text-align: center;
       margin-bottom: 0.5rem;
     }
@@ -28,7 +28,7 @@
       margin-top: 2rem;
     }
 
-    #post_description {
+    #post_meta_data {
       color: #444;
       font-style: italic;
       margin-bottom: 1.5rem;
@@ -60,65 +60,98 @@
       text-align: center;
       margin-top: 2rem;
     }
+
+    h1, h2, h3, h4, h5, h6 {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
   </style>
 </head>
 <body>
-  <h1>Welcome To VimVictimSpace</h1>
-  <h2>I Blog About Stuff I Find Interesting</h2>
+  <h1>Welcome To TheVimVictimSpace</h1>
+  <h3>I Blog About Tech Stuff I Find Interesting</h3>
 
-  <h3 id="post_header">Hackers steal creds of unsuspecting end users, here's how they do it!</h3>
-  <h4 id="post_description">This is how I think hackers steal from end users</h4>
+  <hr>
+
+  <h2 id="post_header">Do Not Be Like Bob</h2>
+  <h4>Why I Think SMS OTPs Are Easier To Hack Than You Think .ep1|</h4> 
+  <h6 id="post_meta_data">Author: TheVimVictim . . . Date: 28 Aug 2025 . . . Est Time: 4min</h6>
 
   <p>
-    In this blog, imagine <span class="highlight">I am the hacker</span> and Mr. Bob is the victim.  
-    Bob banks with <strong>PhishBank</strong>, a new bank in town. He loves PhishBank because of 
-    their excellent online services. Bob has a strong, secure password (he doesn’t share it with anyone) 
-    and a lot of money in his account.  
+    In this blog, imagine I am the hacker and Mr. Bob is the victim.  
+    Bob banks with PhishBank, a new bank in town. Bob loves PhishBank because of 
+    their excellent online services. Bob has a strong password and he knows not to share it 
+    with anyone because Bob has a lot of money in his account.  
   </p>
 
   <p>
-    Since PhishBank is new, they roll out constant updates. Naturally, they send Bob emails about new 
-    features and upgrades. Bob trusts these emails because… well, PhishBank is a great bank, right?  
+    Since PhishBank is new, they roll out constant updates. So, they send Bob emails about new 
+    features and upgrades all the time. Bob does not mind these emails because Bob is in love with this bank.
   </p>
 
   <p>
-    Now here’s where I step in. I want Bob’s money — <em>a lot of it</em>. But I’m wary of those 
-    cybersecurity folks with their dozens of certificates lurking around.  
+    Now, my problem is... I want Bob’s money, <span class="highlight">all of it</span>. But I know Bob's 
+    password is strong and very hard to guess and I know PhishBank sends SMS One-Time Password (OTP) to their customers 
+    as a security measure. Now, I have to find a way to get his password and then the OTP. Tough times!
   </p>
 
-  <blockquote>
-    “Instead of attacking the fortress, why not trick the man holding the keys?”  
-  </blockquote>
-
   <p>
-    So, I try a different approach: targeting Bob directly. I register a domain name that looks almost 
-    like PhishBank’s. Then, I send him an email:  
+    So, I got this idea: Trick Bob into giving the credentials directly to me. I register a domain name that looks almost 
+    like phishbank.com (something like PhishBank.co or ph1shbank.com). Then, I send him an email:  
   </p>
 
   <blockquote>
     <em>“Good day Mr. Bob, we have a new update on the system. Please log in within the next hour 
-    to avoid losing access.”</em>
+    to avoid losing access. Click here to log in."</em>
   </blockquote>
 
   <p>
-    Bob panics. Afraid of losing his wealth, he rushes to the provided login link — not realizing 
-    it’s my fake site. He enters his username and password. Seconds later, he receives an OTP SMS 
-    from the real PhishBank. He dutifully types it in. Everything looks normal… or does it?  
+    Bob panics. Afraid of losing his money, he rushes to the provided login link, enters his username and password. 
+    Seconds later, he receives an OTP SMS 
+    from the <strong><em>real</em></strong> PhishBank. He types it in. Lovely, Bob gets a thumbs up message on his screen. </p>
+
+  <blockquote>
+    <em>Thank you Mr Bob, you have access.</em>
+  </blockquote>
+  <p>
+    Everything looks normal… or does it?  
   </p>
 
   <p>
-    Here’s the truth: Bob was never on the real site.  
+    <span class="highlight">Here’s the truth</span>: Bob was never on the real site.  
     He handed his login credentials directly to me.  
   </p>
 
   <p>
+    <span class="highlight">Here's how I did it</span>: I created a fake login page that <strong><em>looks</em></strong> 
+    exactly like the real PhishBank's.
     My fake login page captured his details and stored them in my database.  
-    A script I wrote even forwarded the credentials to the real PhishBank system to keep things 
-    looking legit — that way, Bob still gets his OTP and thinks all is fine.  
+    A script I wrote forwarded the credentials to the real PhishBank system, that way, 
+    Bob still gets his OTP which he will then give to me.
   </p>
 
   <p class="dramatic">
     And just like that… <br> I AM IN!!!
   </p>
+
+  <ul>
+    <li><strong>Don’t click suspicious links</strong> – Go learn about URL structures. Worth 2min of your time.</li>
+    <li><strong>Verify sender email/number</strong> – Go learn about domains and their standards.</li>
+    <li><strong>Look for HTTPS</strong> – But remember, HTTPS alone doesn’t mean it’s safe.</li>
+    <li><strong>Check grammar and urgency tactics</strong> – “Act now or lose access!” is a red flag.</li>
+    <li><strong>Call the bank if unsure</strong> – Use the number on the back of your card, not the one in the email.</li>
+    <li><strong>Report suspicious communications</strong> – Forward phishing emails/SMS to the bank’s fraud team.</li>
+  </ul>
+
+  <h5>THIS POST IS BASED ON A LAB I USE TO EDUCATE MY FRIENDS AND FAMILY ABOUT THE DANGERS OF 
+    INSECURE SOFTWARE SYSTEMS, Bob AND PhishBank ARE FICTIONAL CHARACTERS.
+    HACKING A SYSTEM WITHOUT PERMISSION FROM THE SYSTEM'S OWNER IS A VERY SERIOUS AND PUNISHABLE OFFENSE
+    DO NOT DO IT.
+    </h5> 
+    <p class="dramatic">
+      Stay Safe. Do Not Be Like Bob.  Now Gerrarra Here!
+  </p>
+  <hr>
 </body>
 </html>
