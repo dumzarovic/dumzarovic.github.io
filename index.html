@@ -1,20 +1,124 @@
-<html>
-  <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Iceland'>
-    <link rel="stylesheet" href="style.css">
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VimVictimSpace Blog</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Iceland'>
+  <style>
+    body {
+      font-family: 'Iceland', sans-serif;
+      font-size: 22px;
+      padding: 1rem 2rem;
+      color: #1F3044;
+      background-color: rgb(250, 235, 228);
+      line-height: 1.6;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    #post_header {
+      color: red;
+      margin-top: 2rem;
+    }
+
+    #post_description {
+      color: #444;
+      font-style: italic;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      margin: 1rem 0;
+    }
+
+    blockquote {
+      border-left: 5px solid #e63946;
+      padding-left: 1rem;
+      margin: 1.5rem 0;
+      color: #444;
+      font-style: italic;
+      background: rgba(255, 255, 255, 0.7);
+    }
+
+    .highlight {
+      background: #fff3cd;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+    }
+
+    .dramatic {
+      font-weight: bold;
+      font-size: 1.3rem;
+      color: #e63946;
+      text-align: center;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
   <h1>Welcome To VimVictimSpace</h1>
   <h2>I Blog About Stuff I Find Interesting</h2>
 
   <h3 id="post_header">Hackers steal creds of unsuspecting end users, here's how they do it!</h3>
   <h4 id="post_description">This is how I think hackers steal from end users</h4>
 
-  <p>In this blog imagine I am the hacker and Mr Bob is the victim.
-    Say, Bob banks with PhishBank, a new bank in town. Bob loves PhishBank because of their excellent online services. Bob has a strong and secure password (he does not share it with anyone). Bob has a lot of money in his account. PhishBank being a new bank, has a lot of new updates in their software systems. So, PhishBank will, from time to time, send emails to Bob updating him on the new and upcoming services and feauters of the PhishBank website. Bob is fine with this because PhishBank is a great bank. Now, me being a hacker, I want to hack PhishBank and steal money...a lot of money. But I am scared the bank might have those cybersecurity people with 100s of comptia and THM certificates watching for malicious activities. So, I get an idea, how about I try to hack Bob instead and trick him into thinking I am PhishBank inorder to get his log in creds and see if I can work something from there?</p>
-  <p>So I decide to go with this plan. I register a domain that is closer to that of PhishBank. From there I send Bob an email mimicking PhishBank. "Good day Mr Bob, we have a new update on the system please log in to ensure you do not lose access in the next hour" and in this email I provide a link to the log in page of PhishBank. Bob worried he might lose his access to his fortunes he hurries to log in. As usual, Bob goes to the login page of PhishBank(but the one provided in the link in the email). He enters his username and then his password. And he recieves an OTP SMS in a couple seconds from the login. He goes back to the webpage to enter in the OTP and all is well......or is it?</p>
-  <p>What just happened?</p>
-  <p>I created a fake PhishBank login webpage, it looks exactly like the real PhishBank's(the side you see in your screen at least)</p>
-  <p>When Bob was typing away his creds in the webpage provided by the email, he was actually writing them in my fake webpage that takes those creds and stores them in my database. I also have a script that relays these creds to the real PhishBank, so to make it possible for Bob to get his lovely OTP. sure enough when Bob gets his OTP he will hand it to me. My script takes the OTP, thank you, and logs it in the real PhishBank.</p>
-  <p>I AM IN!!!!!</p>
+  <p>
+    In this blog, imagine <span class="highlight">I am the hacker</span> and Mr. Bob is the victim.  
+    Bob banks with <strong>PhishBank</strong>, a new bank in town. He loves PhishBank because of 
+    their excellent online services. Bob has a strong, secure password (he doesn’t share it with anyone) 
+    and a lot of money in his account.  
+  </p>
+
+  <p>
+    Since PhishBank is new, they roll out constant updates. Naturally, they send Bob emails about new 
+    features and upgrades. Bob trusts these emails because… well, PhishBank is a great bank, right?  
+  </p>
+
+  <p>
+    Now here’s where I step in. I want Bob’s money — <em>a lot of it</em>. But I’m wary of those 
+    cybersecurity folks with their dozens of certificates lurking around.  
+  </p>
+
+  <blockquote>
+    “Instead of attacking the fortress, why not trick the man holding the keys?”  
+  </blockquote>
+
+  <p>
+    So, I try a different approach: targeting Bob directly. I register a domain name that looks almost 
+    like PhishBank’s. Then, I send him an email:  
+  </p>
+
+  <blockquote>
+    <em>“Good day Mr. Bob, we have a new update on the system. Please log in within the next hour 
+    to avoid losing access.”</em>
+  </blockquote>
+
+  <p>
+    Bob panics. Afraid of losing his wealth, he rushes to the provided login link — not realizing 
+    it’s my fake site. He enters his username and password. Seconds later, he receives an OTP SMS 
+    from the real PhishBank. He dutifully types it in. Everything looks normal… or does it?  
+  </p>
+
+  <p>
+    Here’s the truth: Bob was never on the real site.  
+    He handed his login credentials directly to me.  
+  </p>
+
+  <p>
+    My fake login page captured his details and stored them in my database.  
+    A script I wrote even forwarded the credentials to the real PhishBank system to keep things 
+    looking legit — that way, Bob still gets his OTP and thinks all is fine.  
+  </p>
+
+  <p class="dramatic">
+    And just like that… <br> I AM IN!!!
+  </p>
+</body>
 </html>
