@@ -4,5 +4,17 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Iceland'>
     <link rel="stylesheet" href="style.css">
   </head>
-  <p>Welcome to my blog space</p>
+  <h1>Welcome To VimVictimSpace</h1>
+  <h2>I Blog About Stuff I Find Interesting</h2>
+
+  <h3 id="post_header">Hackers steal creds of unsuspecting end users, here's how they do it!</h3>
+  <h4 id="post_description">This is how I think hackers steal from end users</h4>
+
+  <p>In this blog imagine I am the hacker and Mr Bob is the victim.
+    Say, Bob banks with PhishBank, a new bank in town. Bob loves PhishBank because of their excellent online services. Bob has a strong and secure password (he does not share it with anyone). Bob has a lot of money in his account. PhishBank being a new bank, has a lot of new updates in their software systems. So, PhishBank will, from time to time, send emails to Bob updating him on the new and upcoming services and feauters of the PhishBank website. Bob is fine with this because PhishBank is a great bank. Now, me being a hacker, I want to hack PhishBank and steal money...a lot of money. But I am scared the bank might have those cybersecurity people with 100s of comptia and THM certificates watching for malicious activities. So, I get an idea, how about I try to hack Bob instead and trick him into thinking I am PhishBank inorder to get his log in creds and see if I can work something from there?</p>
+  <p>So I decide to go with this plan. I register a domain that is closer to that of PhishBank. From there I send Bob an email mimicking PhishBank. "Good day Mr Bob, we have a new update on the system please log in to ensure you do not lose access in the next hour" and in this email I provide a link to the log in page of PhishBank. Bob worried he might lose his access to his fortunes he hurries to log in. As usual, Bob goes to the login page of PhishBank(but the one provided in the link in the email). He enters his username and then his password. And he recieves an OTP SMS in a couple seconds from the login. He goes back to the webpage to enter in the OTP and all is well......or is it?</p>
+  <p>What just happened?</p>
+  <p>I created a fake PhishBank login webpage, it looks exactly like the real PhishBank's(the side you see in your screen at least)</p>
+  <p>When Bob was typing away his creds in the webpage provided by the email, he was actually writing them in my fake webpage that takes those creds and stores them in my database. I also have a script that relays these creds to the real PhishBank, so to make it possible for Bob to get his lovely OTP. sure enough when Bob gets his OTP he will hand it to me. My script takes the OTP, thank you, and logs it in the real PhishBank.</p>
+  <p>I AM IN!!!!!</p>
 </html>
