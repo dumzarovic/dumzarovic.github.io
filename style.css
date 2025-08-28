@@ -1,13 +1,15 @@
 body {
     font-family: 'Iceland';
     font-size: 25px;
-    margin: 0;
     padding: 0;
     color: #1F3044;
     background-color: rgb(250, 235, 228);
 }
 
-h1, h3{
+h1, h2{
     text-align: center;
 }
 
+#post_header {
+    color: red;
+}
