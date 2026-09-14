@@ -66,6 +66,15 @@
     margin-bottom: 0.2rem;
 }
 
+    article.post {
+      margin-bottom: 3rem;
+    }
+
+    article.post + article.post {
+      border-top: 3px double #e63946;
+      padding-top: 2rem;
+    }
+
   </style>
 </head>
 <body>
@@ -74,84 +83,182 @@
 
   <hr>
 
-  <h2 id="post_header">Do Not Be Like Bob</h2>
-  <h4>Why I Think SMS OTPs Are Easier To Hack Than You Think .ep1|</h4> 
-  <h6 id="post_meta_data">Author: TheVimVictim . . . Date: 28 Aug 2025 . . . Est Time: 4min</h6>
+  <article class="post">
+    <h2 id="post_header">I'll Host It Myself</h2>
+    <h4>How A Dead Bank Card, A 4GB Laptop, And DuckDNS Got Me Back To Linux Administration .ep2|</h4>
+    <h6 id="post_meta_data">Author: TheVimVictim . . . Date: 14 Sep 2026 . . . Est Time: 5min</h6>
 
-  <p>
-    In this blog, imagine I am the hacker and Mr. Bob is the victim.  
-    Bob banks with PhishBank, a new bank in town. Bob loves PhishBank because of 
-    their excellent online services. Bob has a strong password and he knows not to share it 
-    with anyone because Bob has a lot of money in his account.  
-  </p>
+    <p>
+      I don't know how to start a blog post...My english teachers would mad at me right now! Let me get started...
+    </p>
 
-  <p>
-    Since PhishBank is new, they roll out constant updates. So, they send Bob emails about new 
-    features and upgrades all the time. Bob does not mind these emails because Bob is in love with this bank.
-  </p>
+    <p>
+      SUMMARY: I'm renting a small Virtual Private Server that has been sitting idle for a while now, so I decided:
+      why not just host my blog there? First this blog site, and later, my portfolio and hopefully my clients projects too.
+    </p>
 
-  <p>
-    Now, my problem is... I want Bob’s money, <span class="highlight">all of it</span>. But I know Bob's 
-    password is strong and very hard to guess and I know PhishBank sends SMS One-Time Password (OTP) to their customers 
-    as a security measure. Now, I have to find a way to get his password and then the OTP. Tough times!
-  </p>
+    <p>
+      Thinking back, I remember this one time as a student when I wanted my backend service hosted by
+      AWS or Azure, I was looking for those free tiers...I couldn't create an account
+      because my bank card had expired (and I wasn't smart enough to know virtual cards existed).
+    </p>
 
-  <p>
-    So, I got this idea: Trick Bob into giving the credentials directly to me. I register a domain name that looks almost 
-    like phishbank.com (something like phishbank.co or ph1shbank.com). Then, I send him an email:  
-  </p>
+    <blockquote>
+      <em>I was absolutely gutted by the fact that I could not create an account!!!</em>
+    </blockquote>
 
-  <blockquote>
-    <em>“Good day Mr. Bob, we have a new update on the system. Please log in within the next hour 
-    to avoid losing access. Click here to log in."</em>
-  </blockquote>
+    <p>
+      I was fuming because I desperately needed my application up and running to demo to potential funders
+      (yes, I was delusional like that...way too much confidence on my To-Do API)
+    </p>
 
-  <p>
-    Bob panics. Afraid of losing his money, he rushes to the provided login link, enters his username and password. 
-    Seconds later, he receives an OTP SMS 
-    from the <strong><em>real</em></strong> PhishBank. He types it in. Lovely, Bob gets a thumbs up message on his screen. </p>
+    <p>
+      After a little bit of research, I learned I don't actually need to rent space from Big Tech to keep my applications
+      online; I could use my own hardware for <span class="highlight">free</span>. I started aspiring to
+      host everything on my own machines. The biggest problem at the time was my tiny 4GB RAM laptop, which
+      didn't have enough power to even open Chrome, I had to use Chromium. <em>Oh!! Poverty... when I catch you!!.</em>
+    </p>
 
-  <blockquote>
-    <em>Thank you Mr Bob, you have access.</em>
-  </blockquote>
-  <p>
-    Everything looks normal… or does it?  
-  </p>
+    <p>
+      Needless to say(I have always wanted to say that), my tiny machine stood zero chance at hosting an application backend. Luckily, an old ThinkPad
+      (still 4GB RAM, lol) was lying around...So, I dedicated it entirely to hosting. I tried installing
+      <span class="highlight">linux-server</span> on it, but it totally kicked my butt, so I humbled myself and went back to Ubuntu. In that
+      process, I learned a ton about Linux administration, a bit of Nginx, and the basics of cybersecurity.
+    </p>
 
-  <p>
-    <span class="highlight">Here’s the truth</span>: Bob was never on the real site.  
-    He handed his login credentials directly to me.  
-  </p>
+    <p>
+      I fell in love with that version of myself, but shortly into that era, I landed an internship.
+      I had to focus in software development side of things and naturally I got consumed by writing
+      code and slowly abandoned my love for system administration and information security.
+    </p>
 
-  <p>
-    <span class="highlight">Here's how I did it</span>: I created a fake login page that <strong><em>looks</em></strong> 
-    exactly like the real PhishBank's.
-    My fake login page captured his details and stored them in my database.  
-    A script I wrote forwarded the credentials to the real PhishBank system, that way, 
-    Bob still gets his OTP which he will then give to me.
-  </p>
+    <p>
+      One thing that stayed with me, though, was my love for free software and that lingering
+      <span class="highlight">"I will do it, with no Big Tech"</span> mindset. Wherever I go now, I try to convince people
+      to switch to solid open source alternatives (within reason, of course). I coded away until it
+      eventually got a bit boring, and I started doing actual human to human work. <em>I am currently enjoying it :)</em>
+    </p>
 
-  <p class="dramatic">
-    And just like that… <br> I AM IN!!!
-  </p>
+    <p>
+      Through working with humans, my love for SysAdmin and Info Security came roaring back, mixed with love for DevOps. I'm boosting that passion by migrating this website
+      from GitHub Pages to self-hosting.
+    </p>
 
-  <ul>
-    <li><strong>Don’t click suspicious links</strong> – Go learn about URL structures. Worth 2min of your time.</li>
-    <li><strong>Verify sender email/number</strong> – Go learn about domains and their standards.</li>
-    <li><strong>Look for HTTPS</strong> – But remember, HTTPS alone doesn’t mean it’s safe.</li>
-    <li><strong>Check grammar and urgency tactics</strong> – “Act now or lose access!” is a red flag.</li>
-    <li><strong>Call the bank if unsure</strong> – Use the number on the back of your card, not the one in the email.</li>
-    <li><strong>Report suspicious communications</strong> – Forward phishing emails/SMS to the bank’s fraud team.</li>
-  </ul>
+    <p>
+      I'm renting a small Private Server and using it as my ultimate playground. Today, I installed
+      firewall rules, created admin users, and did all the housekeeping you have to do on a fresh
+      system. It's a Linux machine, of course.
+    </p>
 
-  <h5>THIS POST IS BASED ON A LAB I USE TO EDUCATE MY FRIENDS AND FAMILY ABOUT THE DANGERS OF 
-    INSECURE SOFTWARE SYSTEMS, Bob AND PhishBank ARE FICTIONAL CHARACTERS.
-    HACKING A SYSTEM WITHOUT PERMISSION FROM THE SYSTEM'S OWNER IS A VERY SERIOUS AND PUNISHABLE OFFENSE. 
-    DO NOT DO IT.
-    </h5> 
+    <p>
+      I threw a tiny webpage in there and spun up Nginx as my webserver...BOOM!!! I ran straight into an old problem of mindset: I refuse to hand out my raw server IP address to people,
+      but I don't have a proper custom domain either. <em>Side note: sending people raw IP addresses is
+      just messy...I do not like it</em>
+    </p>
+
+    <p>
+      So, I headed over to DuckDNS to get a free domain and pointed it to my server's IP.
+      That kicked off a fun little <span class="highlight">troubleshooting session</span>:
+    </p>
+
+    <ul>
+      <li>At first, I kept hitting connection timeout errors.</li>
+      <li>Then I realized I was pointing the DuckDNS record to my <strong><em>local</em></strong> IP instead of the server IP <em>duh</em>.</li>
+      <li>So I tried feeding DuckDNS my server's IPv4 address, but it wasn't having it.</li>
+      <li>That led me down the rabbit hole of discovering I needed an IPv6 address (and learning the hard way that on DigitalOcean, you actually have to power down the droplet first just to toggle IPv6 on).</li>
+      <li><em>LOL.</em> I honestly thought I could just magically map IPv4 to IPv6, like there's a neat little web form somewhere where you paste an IPv4 address and out pops an IPv6 twin. Turns out, life doesn't work that way. That is why I am not a Network Technician.</li>
+      <li>Once I got the DNS sorted, I hit a very annoying rookie error: I accidentally pasted a whole URL into the Nginx config file instead of just the clean domain name for the <span class="highlight">server_name</span> directive.</li>
+    </ul>
+
+    <p>After fighting the webserver configurations and DNS problems, I have decided to call it a night...I will be back tomorrow with wisdom. Currently, I can't reach my webpage from my domain...Maar, tomorrow 
+      I am going to figure it out.</p>
+
     <p class="dramatic">
-      Stay Safe. Do Not Be Like Bob.  Now Gerrarra Here!
-  </p>
+      Feels good to be back in the terminal.
+    </p>
+  </article>
+
+  <article class="post">
+    <h2 id="post_header">Do Not Be Like Bob</h2>
+    <h4>Why I Think SMS OTPs Are Easier To Hack Than You Think .ep1|</h4>
+    <h6 id="post_meta_data">Author: TheVimVictim . . . Date: 28 Aug 2025 . . . Est Time: 4min</h6>
+
+    <p>
+      In this blog, imagine I am the hacker and Mr. Bob is the victim.
+      Bob banks with PhishBank, a new bank in town. Bob loves PhishBank because of
+      their excellent online services. Bob has a strong password and he knows not to share it
+      with anyone because Bob has a lot of money in his account.
+    </p>
+
+    <p>
+      Since PhishBank is new, they roll out constant updates. So, they send Bob emails about new
+      features and upgrades all the time. Bob does not mind these emails because Bob is in love with this bank.
+    </p>
+
+    <p>
+      Now, my problem is... I want Bob's money, <span class="highlight">all of it</span>. But I know Bob's
+      password is strong and very hard to guess and I know PhishBank sends SMS One-Time Password (OTP) to their customers
+      as a security measure. Now, I have to find a way to get his password and then the OTP. Tough times!
+    </p>
+
+    <p>
+      So, I got this idea: Trick Bob into giving the credentials directly to me. I register a domain name that looks almost
+      like phishbank.com (something like phishbank.co or ph1shbank.com). Then, I send him an email:
+    </p>
+
+    <blockquote>
+      <em>"Good day Mr. Bob, we have a new update on the system. Please log in within the next hour
+      to avoid losing access. Click here to log in."</em>
+    </blockquote>
+
+    <p>
+      Bob panics. Afraid of losing his money, he rushes to the provided login link, enters his username and password.
+      Seconds later, he receives an OTP SMS
+      from the <strong><em>real</em></strong> PhishBank. He types it in. Lovely, Bob gets a thumbs up message on his screen. </p>
+
+    <blockquote>
+      <em>Thank you Mr Bob, you have access.</em>
+    </blockquote>
+    <p>
+      Everything looks normal… or does it?
+    </p>
+
+    <p>
+      <span class="highlight">Here's the truth</span>: Bob was never on the real site.
+      He handed his login credentials directly to me.
+    </p>
+
+    <p>
+      <span class="highlight">Here's how I did it</span>: I created a fake login page that <strong><em>looks</em></strong>
+      exactly like the real PhishBank's.
+      My fake login page captured his details and stored them in my database.
+      A script I wrote forwarded the credentials to the real PhishBank system, that way,
+      Bob still gets his OTP which he will then give to me.
+    </p>
+
+    <p class="dramatic">
+      And just like that… <br> I AM IN!!!
+    </p>
+
+    <ul>
+      <li><strong>Don't click suspicious links</strong> – Go learn about URL structures. Worth 2min of your time.</li>
+      <li><strong>Verify sender email/number</strong> – Go learn about domains and their standards.</li>
+      <li><strong>Look for HTTPS</strong> – But remember, HTTPS alone doesn't mean it's safe.</li>
+      <li><strong>Check grammar and urgency tactics</strong> – "Act now or lose access!" is a red flag.</li>
+      <li><strong>Call the bank if unsure</strong> – Use the number on the back of your card, not the one in the email.</li>
+      <li><strong>Report suspicious communications</strong> – Forward phishing emails/SMS to the bank's fraud team.</li>
+    </ul>
+
+    <h5>THIS POST IS BASED ON A LAB I USE TO EDUCATE MY FRIENDS AND FAMILY ABOUT THE DANGERS OF
+      INSECURE SOFTWARE SYSTEMS, Bob AND PhishBank ARE FICTIONAL CHARACTERS.
+      HACKING A SYSTEM WITHOUT PERMISSION FROM THE SYSTEM'S OWNER IS A VERY SERIOUS AND PUNISHABLE OFFENSE.
+      DO NOT DO IT.
+      </h5>
+      <p class="dramatic">
+        Stay Safe. Do Not Be Like Bob.  Now Gerrarra Here!
+    </p>
+  </article>
+
   <hr>
 </body>
 </html>
